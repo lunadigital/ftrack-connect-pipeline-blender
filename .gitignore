@@ -1,0 +1,4 @@
+.eggs/
+build/
+source/ftrack_connect_pipeline_blender/_version.py
+source/ftrack_connect_pipeline_blender.egg-info/
