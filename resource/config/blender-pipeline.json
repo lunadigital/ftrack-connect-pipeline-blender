@@ -1,0 +1,23 @@
+{
+     "priority": 100,
+     "context": ["Task"],
+     "identifier": "ftrack-connect-launch-blender",
+     "applicationIdentifier": "blender_{variant}",
+     "integrations": {
+        "pipeline": [
+            "ftrack-connect-pipeline-definition",
+            "ftrack-connect-pipeline",
+            "ftrack-connect-pipeline-qt",
+            "ftrack-connect-pipeline-blender"
+        ]
+     },
+     "label": "Blender",
+     "icon": "https://lunadigital.tv/ftrack/application_icons/blender.png",
+     "variant": "{version}",
+     "search_path": {
+        "windows": {
+            "prefix": ["C:\\", "Program Files.*"],
+            "expression": ["Blender Foundation", "Blender.+", "blender.exe"]
+        }
+     }
+}

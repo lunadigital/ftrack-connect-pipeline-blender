@@ -71,7 +71,7 @@ def register(session):
 
     session.event_hub.subscribe(
         'topic=ftrack.connect.application.discover and '
-        'data.application.identifier=Blender*'
+        'data.application.identifier=blender*'
         #' and data.application.version >= 3.0',
         handle_discovery_event,
         priority=40
@@ -81,7 +81,7 @@ def register(session):
 
     session.event_hub.subscribe(
         'topic=ftrack.connect.application.launch and '
-        'data.application.identifier=Blender*'
+        'data.application.identifier=blender*'
         #' and data.application.version >= 3.0',
         handle_launch_event,
         priority=40
